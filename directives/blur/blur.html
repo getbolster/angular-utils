@@ -1,0 +1,7 @@
+<form novalidate name="LoginForm">
+    <input type="email" name="email" ng-model="user.email" placeholder="email" required blur />
+    <input type="password" name="password" ng-model="user.password" placeholder="password" required />
+    <input type="submit" value="Log In" ng-disabled="LoginForm.$invalid" />
+</form>
+
+<div ng-show="LoginForm.$error.blur" class="error-message ng-cloak">Uh oh! Please double check your email and password.</div>

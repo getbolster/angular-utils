@@ -1,0 +1,9 @@
+input.ng-dirty.ng-invalid { /* onkeypress warning on invalid fields */
+    border: 1px solid yellow;
+}
+input.ng-dirty.ng-invalid:focus { outline: 3px solid rgba(255,189,49,0.2); }
+
+input.ng-invalid-blur { /* onblur errors on invalid fields */
+    border: 1px solid red !important;
+    outline: 3px solid rgba(192,46,46,0.2);
+}
