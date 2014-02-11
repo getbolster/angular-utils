@@ -1,3 +1,5 @@
+var app = angular.module('app', []);
+
 app.directive('blur', function() {
     return {
         restrict: 'A',
@@ -35,4 +37,4 @@ app.directive('blur', function() {
             });
         }
     }
-})
+});

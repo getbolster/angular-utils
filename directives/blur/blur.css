@@ -7,3 +7,7 @@ input.ng-invalid-blur { /* onblur errors on invalid fields */
     border: 1px solid red !important;
     outline: 3px solid rgba(192,46,46,0.2);
 }
+
+.error-message {
+	margin-top: 20px;
+}
