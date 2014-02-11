@@ -4,30 +4,28 @@
 <head>
 	<meta http-equiv="Content-type" content="text/html;charset=utf-8" />
 
-	<title>Blur Directive</title>
+	<title>Float Label Directive</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="author" content="Bolster" />
 	<meta http-equiv="Content-Language" content="en" />
 
-	<link rel="stylesheet" href="blur.css" />
+	<link rel="stylesheet" href="floatLabel.css" />
 </head>
 
 <body>
 
-	<h1>Blur Directive</h1>
+	<h1>Float Label Directive</h1>
 
-	<form novalidate name="LoginForm">
-	    <input type="email" name="email" ng-model="user.email" placeholder="email" required blur />
-	    <input type="password" name="password" ng-model="user.password" placeholder="password" required />
+	<form novalidate name="LoginForm" ng-submit="submit()">
+	    <input type="email" name="email" ng-model="user.email" float-label="Email" />
+	    <input type="password" name="password" ng-model="user.password" float-label="Password" />
 	    <input type="submit" value="Log In" ng-disabled="LoginForm.$invalid" />
 	</form>
 
-	<div ng-show="LoginForm.$error.blur" class="error-message ng-cloak">Uh oh! Please double check your email and password.</div>
-
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
-	<script type="text/javascript" src="blur.js"></script>
+	<script type="text/javascript" src="floatLabel.js"></script>
 </body>
 
 </html>

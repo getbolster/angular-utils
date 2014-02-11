@@ -1,0 +1,51 @@
+/* border box 4 lyfe */
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-family: "Helvetica", "Arial", sans-serif;
+}
+
+/* some pretty form styles */
+input:not([type=submit]) {
+	background-color: #fff;
+	border: 1px solid #eee;
+	border-radius: 0;
+	-webkit-appearance: none;
+	padding: 0 10px;
+	height: 44px;
+	width: 100%;
+	vertical-align: middle;
+	outline: none;
+}
+
+input[type=submit] {
+	margin-top: 20px;
+}
+
+/* default float label styles */
+.float-label {
+	position:relative;
+	margin-top: 25px;
+    width: 100%;
+    float: left;
+}
+
+.float-label label {
+	position: absolute;
+	font-size: 0.8em;
+	line-height: 1.25em;
+	font-weight: 500;
+	padding: 0 10px;
+	color: #4481C4;
+	top: -10px;
+	left: 0;
+	transition: all 0.1s linear;
+	opacity: 0;
+}
+
+/* styles when form element has inputted data */
+.float-label.has-value label {
+    top: -20px;
+    opacity: 1;
+}
